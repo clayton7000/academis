@@ -16,11 +16,11 @@ public class Nota {
 	public void setId(int id) {
 		this.id = id;
 	}
-	public int getMateria() {
-		return materia;
+	public int getTurma_materia() {
+		return turma_materia;
 	}
-	public void setMateria(int materia) {
-		this.materia = materia;
+	public void setTurma_materia(int turma_materia) {
+		this.turma_materia = turma_materia;
 	}
 	public String getAluno() {
 		return aluno;
@@ -76,7 +76,7 @@ public class Nota {
 	public void setMedia(double media) {
 		this.media = media;
 	}
-	private int materia;
+	private int turma_materia;
 	private String aluno;
 	private double nota1;
 	private double nota2;

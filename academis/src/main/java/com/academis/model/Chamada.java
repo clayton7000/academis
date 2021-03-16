@@ -12,7 +12,7 @@ public class Chamada {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
-	private int material;
+	private int turma_materia;
 	private String aluno;
 	private Date dia;
 	private boolean presente;
@@ -22,11 +22,11 @@ public class Chamada {
 	public void setId(int id) {
 		this.id = id;
 	}
-	public int getMaterial() {
-		return material;
+	public int getTurma_materia() {
+		return turma_materia;
 	}
-	public void setMaterial(int material) {
-		this.material = material;
+	public void setTurma_materia(int turma_materia) {
+		this.turma_materia = turma_materia;
 	}
 	public String getAluno() {
 		return aluno;

@@ -1,12 +1,14 @@
 package com.academis.model;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
 public class Turma {
 		@Id
-		private int codigo;
+		@GeneratedValue(strategy = GenerationType.IDENTITY)
 		public int getCodigo() {
 			return codigo;
 		}
@@ -25,20 +27,14 @@ public class Turma {
 		public void setLetra(char letra) {
 			this.letra = letra;
 		}
-		public String getAluno() {
-			return aluno;
-		}
-		public void setAluno(String aluno) {
-			this.aluno = aluno;
-		}
 		public int getAno() {
 			return ano;
 		}
 		public void setAno(int ano) {
 			this.ano = ano;
 		}
+		private int codigo;
 		private int serie;
 		private char letra;
-		private String aluno;
 		private int ano;
 }
